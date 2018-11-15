@@ -1,7 +1,10 @@
 <svg viewport-fill="#111111">
   <image href="face.png" />
-  <text id="myDate" x="50%+90" y="50%+12"
-      fill="#f83c40" font-size="32" font-family="System-Bold"
+  <text id="month" x="18%" y="50%+7"
+      fill="#f83c40" font-size="24" font-family="System-Bold"
+      text-anchor="start" text-length="20"></text>
+  <text id="date" x="50%+100" y="50%+7"
+      fill="#f83c40" font-size="24" font-family="System-Bold"
       text-anchor="end" text-length="20"></text>
   <circle cx="50%" cy="50%" r="10" fill="#ffffff" />
   <g id="mins" pointer-events="visible" transform="translate(50%,50%)">

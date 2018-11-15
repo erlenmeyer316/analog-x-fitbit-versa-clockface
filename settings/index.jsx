@@ -28,8 +28,22 @@ function mySettings(props) {
           ]}
         />
       </Section>
+      <Section
+        title={<Text bold align="center">Date settings</Text>}>
+        <Toggle
+          settingsKey="showDate"
+          label={"Show Date"}
+        />
+        <Toggle
+          settingsKey="showDay"
+          label={"Show Day"}
+        />
+        <Toggle
+          settingsKey="showMonth"
+          label={"Show Month"}
+        />        
+      </Section>      
     </Page>
   );
 }
-
 registerSettingsPage(mySettings);

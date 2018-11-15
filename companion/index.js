@@ -32,3 +32,8 @@ settingsStorage.onchange = evt => {
   };
   sendVal(data);
 };
+
+
+settingsStorage.setItem('showDate', 'true') ;
+settingsStorage.setItem('showDay', 'false') ;
+settingsStorage.setItem('showMonth', 'true') ;
