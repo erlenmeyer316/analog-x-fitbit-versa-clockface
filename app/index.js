@@ -14,7 +14,7 @@ let hourHand = document.getElementById('hours'),
   days = ['SUN', 'MON', 'TUE', 'WED', 'THUR', 'FRI', 'SAT'],
   months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'],
   showDay = false,
-  showDate = true,
+  showDate = false,
   showMonth = false;
 
 function hoursToAngle(hours, minutes) {
@@ -67,6 +67,7 @@ messaging.peerSocket.onmessage = evt => {
     middle.style.fill = color;
     secsRect.style.fill = color;
     date.style.fill = color;
+    month.style.fill = color;
   }
 
   if (evt.data.key === 'showDay' && evt.data.newValue) {
