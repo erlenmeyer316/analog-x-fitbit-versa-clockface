@@ -33,7 +33,7 @@ settingsStorage.onchange = evt => {
   sendVal(data);
 };
 
-
-settingsStorage.setItem('showDate', 'true') ;
-settingsStorage.setItem('showDay', 'false') ;
-settingsStorage.setItem('showMonth', 'true') ;
+settingsStorage.setItem('color', settingsStorage.getItem('color') ? settingsStorage.getItem('color') : '"#f83c40"');
+settingsStorage.setItem('showDate', settingsStorage.getItem('showDate') ? settingsStorage.getItem('showDate') : true);
+settingsStorage.setItem('showDay', settingsStorage.getItem('showDay') ? settingsStorage.getItem('showDay') : false);
+settingsStorage.setItem('showMonth', settingsStorage.getItem('showMonth') ? settingsStorage.getItem('showMonth') : false);
